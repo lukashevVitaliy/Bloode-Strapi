@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bluetooths",
+  "info": {
+    "singularName": "bluetooth",
+    "pluralName": "bluetooths",
+    "displayName": "bluetooth",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "bluetooths"
+    },
+    "bg_bluetooths": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bg-bluetooth.bg-bluetooth",
+      "mappedBy": "bluetooth"
+    },
+    "description_bluetooths": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::description-bluetooth.description-bluetooth",
+      "mappedBy": "bluetooth"
+    },
+    "bluetooth_colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bluetooth-color.bluetooth-color",
+      "mappedBy": "bluetooth"
+    },
+    "bluetooth_short_descs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bluetooth-short-desc.bluetooth-short-desc",
+      "mappedBy": "bluetooth"
+    },
+    "bluetooth_sizes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bluetooth-size.bluetooth-size",
+      "mappedBy": "bluetooth"
+    },
+    "info_bluetooths": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::info-bluetooth.info-bluetooth",
+      "mappedBy": "bluetooth"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

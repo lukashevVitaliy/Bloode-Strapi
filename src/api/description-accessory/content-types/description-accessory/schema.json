@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "description_accessories",
+  "info": {
+    "singularName": "description-accessory",
+    "pluralName": "description-accessories",
+    "displayName": "description-accessory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "accessoryDescription": {
+      "type": "component",
+      "repeatable": true,
+      "component": "description.description",
+      "pluginOptions": {}
+    },
+    "accessory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::accessory.accessory",
+      "inversedBy": "description_accessories"
+    }
+  }
+}

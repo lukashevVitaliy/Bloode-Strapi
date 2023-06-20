@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "description_headsets",
+  "info": {
+    "singularName": "description-headset",
+    "pluralName": "description-headsets",
+    "displayName": "description-headset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model",
+      "required": true
+    },
+    "DescriptionHeadset": {
+      "type": "component",
+      "repeatable": true,
+      "component": "description.description",
+      "pluginOptions": {}
+    },
+    "headset": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headset.headset",
+      "inversedBy": "description_headsets"
+    }
+  }
+}

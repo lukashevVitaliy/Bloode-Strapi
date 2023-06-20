@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_pages",
+  "info": {
+    "singularName": "news-page",
+    "pluralName": "news-pages",
+    "displayName": "news-page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "titleSection": {
+      "type": "string",
+      "required": true,
+      "default": "Новости",
+      "pluginOptions": {}
+    },
+    "titleNews": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "dateNews": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "textTop": {
+      "type": "richtext",
+      "pluginOptions": {}
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.block-header-text",
+      "pluginOptions": {}
+    }
+  }
+}

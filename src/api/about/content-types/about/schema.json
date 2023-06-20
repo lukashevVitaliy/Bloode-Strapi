@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "about",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titlePage": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "slices": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.edito",
+        "shared.menu-right-tabs"
+      ],
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": {}
+    }
+  }
+}

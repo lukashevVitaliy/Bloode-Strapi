@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keybords",
+  "info": {
+    "singularName": "keybord",
+    "pluralName": "keybords",
+    "displayName": "keybord",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "subtitle": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "keybords"
+    },
+    "bg_keyboards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bg-keyboard.bg-keyboard",
+      "mappedBy": "keybord"
+    },
+    "description_keyboards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::description-keyboard.description-keyboard",
+      "mappedBy": "keybord"
+    },
+    "info_keybords": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::info-keybord.info-keybord",
+      "mappedBy": "keybord"
+    },
+    "keyboard_colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::keyboard-color.keyboard-color",
+      "mappedBy": "keybord"
+    },
+    "keyboard_sizes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::keyboard-size.keyboard-size",
+      "mappedBy": "keybord"
+    },
+    "keyboard_short_descs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::keyboard-short-desc.keyboard-short-desc",
+      "mappedBy": "keybord"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

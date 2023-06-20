@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_dynamics_dynamics",
+  "info": {
+    "displayName": "dynamics"
+  },
+  "options": {},
+  "attributes": {
+    "hybrid_membrane": {
+      "type": "string"
+    },
+    "apt_x_hd": {
+      "type": "string"
+    },
+    "seven_one_surround_sound": {
+      "type": "string"
+    },
+    "two_one_stereo": {
+      "type": "string"
+    }
+  }
+}

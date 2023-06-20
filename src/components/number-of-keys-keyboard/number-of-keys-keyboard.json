@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_number_of_keys_keyboard_number_of_keys_keyboards",
+  "info": {
+    "displayName": "number-of-keys-keyboard"
+  },
+  "options": {},
+  "attributes": {
+    "B104_113": {
+      "type": "string"
+    },
+    "B60_87": {
+      "type": "string"
+    }
+  }
+}

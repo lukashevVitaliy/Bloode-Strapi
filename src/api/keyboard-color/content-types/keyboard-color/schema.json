@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyboard_colors",
+  "info": {
+    "singularName": "keyboard-color",
+    "pluralName": "keyboard-colors",
+    "displayName": "keyboard-color",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "ColorsSchemeKeyboard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colors-scheme.colors-scheme"
+    },
+    "keybord": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::keybord.keybord",
+      "inversedBy": "keyboard_colors"
+    }
+  }
+}

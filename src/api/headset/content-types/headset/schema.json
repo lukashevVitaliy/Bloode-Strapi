@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headsets",
+  "info": {
+    "singularName": "headset",
+    "pluralName": "headsets",
+    "displayName": "headset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "headsets"
+    },
+    "bg_headsets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bg-headset.bg-headset",
+      "mappedBy": "headset"
+    },
+    "description_headsets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::description-headset.description-headset",
+      "mappedBy": "headset"
+    },
+    "info_headsets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::info-headset.info-headset",
+      "mappedBy": "headset"
+    },
+    "headset_colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::headset-color.headset-color",
+      "mappedBy": "headset"
+    },
+    "headset_short_descs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::headset-short-desc.headset-short-desc",
+      "mappedBy": "headset"
+    },
+    "headset_sizes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::headset-size.headset-size",
+      "mappedBy": "headset"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

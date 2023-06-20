@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_noice_reduction_bluetooth_noice_reduction_bluetooths",
+  "info": {
+    "displayName": "noice-reduction-bluetooth"
+  },
+  "options": {},
+  "attributes": {
+    "anc_enc": {
+      "type": "string"
+    },
+    "enc": {
+      "type": "string"
+    }
+  }
+}

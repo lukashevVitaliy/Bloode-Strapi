@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_category_accessories_category_accessories",
+  "info": {
+    "displayName": "category-accessories"
+  },
+  "options": {},
+  "attributes": {
+    "mouse_pads": {
+      "type": "string"
+    },
+    "headphone_stands": {
+      "type": "string"
+    }
+  }
+}

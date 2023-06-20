@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_headband_headset_headband_headsets",
+  "info": {
+    "displayName": "headband-headset"
+  },
+  "options": {},
+  "attributes": {
+    "double": {
+      "type": "string"
+    },
+    "single": {
+      "type": "string"
+    },
+    "soaring_wing": {
+      "type": "string"
+    }
+  }
+}

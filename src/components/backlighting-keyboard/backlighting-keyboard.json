@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_backlighting_keyboard_backlighting_keyboards",
+  "info": {
+    "displayName": "backlighting-keyboard"
+  },
+  "options": {},
+  "attributes": {
+    "rgb": {
+      "type": "string"
+    },
+    "neon": {
+      "type": "string"
+    },
+    "single_color": {
+      "type": "string"
+    },
+    "not_available": {
+      "type": "string"
+    }
+  }
+}

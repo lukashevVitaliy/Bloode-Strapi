@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_accessories",
+  "info": {
+    "singularName": "list-accessory",
+    "pluralName": "list-accessories",
+    "displayName": "list-accessory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "CategoryAccessories": {
+      "displayName": "category-accessories",
+      "type": "component",
+      "repeatable": false,
+      "component": "category-accessories.category-accessories",
+      "pluginOptions": {}
+    }
+  }
+}

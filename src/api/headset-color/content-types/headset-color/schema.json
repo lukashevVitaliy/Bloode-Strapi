@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headset_colors",
+  "info": {
+    "singularName": "headset-color",
+    "pluralName": "headset-colors",
+    "displayName": "headset-color",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "HeadsetColorsScheme": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colors-scheme.colors-scheme"
+    },
+    "headset": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headset.headset",
+      "inversedBy": "headset_colors"
+    }
+  }
+}

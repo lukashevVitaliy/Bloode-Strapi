@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_shared_press_centr_news_ids",
+  "info": {
+    "displayName": "press-centr-news-id",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "titleNews": {
+      "type": "string",
+      "required": true
+    },
+    "dateNews": {
+      "type": "date",
+      "required": true
+    },
+    "textTop": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "textBlock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.block-header-text"
+    },
+    "titleSection": {
+      "type": "string"
+    }
+  }
+}

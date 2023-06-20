@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mice",
+  "info": {
+    "singularName": "mouse",
+    "pluralName": "mice",
+    "displayName": "mouse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "pluginOptions": {}
+    },
+    "subtitle": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "mice"
+    },
+    "info_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::info-product.info-product",
+      "mappedBy": "mouse"
+    },
+    "short_descs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::short-desc.short-desc",
+      "mappedBy": "mouse"
+    },
+    "descriptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::description.description",
+      "mappedBy": "mouse"
+    },
+    "product_sizes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-size.product-size",
+      "mappedBy": "mouse"
+    },
+    "bg_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bg-item.bg-item",
+      "mappedBy": "mouse"
+    },
+    "product_colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-color.product-color",
+      "mappedBy": "mouse"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

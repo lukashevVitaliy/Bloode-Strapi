@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_block_header_texts",
+  "info": {
+    "displayName": "block-header-text"
+  },
+  "options": {},
+  "attributes": {
+    "titleBlock": {
+      "type": "string"
+    },
+    "textBlock": {
+      "type": "richtext"
+    }
+  }
+}

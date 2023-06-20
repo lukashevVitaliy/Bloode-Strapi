@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bluetooth_colors",
+  "info": {
+    "singularName": "bluetooth-color",
+    "pluralName": "bluetooth-colors",
+    "displayName": "bluetooth-color",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "BluetoothColorsScheme": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colors-scheme.colors-scheme"
+    },
+    "bluetooth": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bluetooth.bluetooth",
+      "inversedBy": "bluetooth_colors"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_press_centr_infos",
+  "info": {
+    "displayName": "press-centr-info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "linkTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "datePublication": {
+      "type": "date"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "linkButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

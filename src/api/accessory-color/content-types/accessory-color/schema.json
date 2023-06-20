@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accessory_colors",
+  "info": {
+    "singularName": "accessory-color",
+    "pluralName": "accessory-colors",
+    "displayName": "accessory-color"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model",
+      "required": true
+    },
+    "accessoryColorsScheme": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colors-scheme.colors-scheme"
+    },
+    "accessory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::accessory.accessory",
+      "inversedBy": "accessory_colors"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_modes_bluetooth_modes_bluetooths",
+  "info": {
+    "displayName": "modes-bluetooth"
+  },
+  "options": {},
+  "attributes": {
+    "audio": {
+      "type": "string"
+    },
+    "game_audio": {
+      "type": "string"
+    }
+  }
+}

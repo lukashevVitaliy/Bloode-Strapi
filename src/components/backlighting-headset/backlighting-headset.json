@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_backlighting_headset_backlighting_headsets",
+  "info": {
+    "displayName": "backlighting-headset"
+  },
+  "options": {},
+  "attributes": {
+    "rgb": {
+      "type": "string"
+    },
+    "neon": {
+      "type": "string"
+    },
+    "seven_color": {
+      "type": "string"
+    },
+    "single": {
+      "type": "string"
+    },
+    "not_available": {
+      "type": "string"
+    }
+  }
+}

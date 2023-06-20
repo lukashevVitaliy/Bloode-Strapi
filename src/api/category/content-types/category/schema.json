@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "mice": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mouse.mouse",
+      "mappedBy": "category"
+    },
+    "keybords": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::keybord.keybord",
+      "mappedBy": "category"
+    },
+    "headsets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::headset.headset",
+      "mappedBy": "category"
+    },
+    "bluetooths": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bluetooth.bluetooth",
+      "mappedBy": "category"
+    },
+    "accessories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accessory.accessory",
+      "mappedBy": "category"
+    }
+  }
+}

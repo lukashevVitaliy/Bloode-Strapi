@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_mice",
+  "info": {
+    "singularName": "list-mouse",
+    "pluralName": "list-mice",
+    "displayName": "list-mouse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "cpi": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "size": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "series": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {}
+    }
+  }
+}

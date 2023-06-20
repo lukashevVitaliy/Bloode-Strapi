@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyboard_sizes",
+  "info": {
+    "singularName": "keyboard-size",
+    "pluralName": "keyboard-sizes",
+    "displayName": "keyboard-size",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "image1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "text": {
+      "type": "text",
+      "default": "* Обращаем ваше внимание на то, что вся информация носит исключительно информационный характер и ни при каких условиях не является публичной офертой. Технические характеристики, программное обеспечение, конструктивные особенности, комплектация могут быть изменены в целях усовершенствования продуктов без предварительного уведомления.",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "РАЗМЕР ПРОДУКТА",
+      "pluginOptions": {}
+    },
+    "keybord": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::keybord.keybord",
+      "inversedBy": "keyboard_sizes"
+    }
+  }
+}

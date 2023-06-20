@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_accessories",
+  "info": {
+    "singularName": "info-accessory",
+    "pluralName": "info-accessories",
+    "displayName": "info-accessory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "text_a": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "text_b": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "text_c": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "text_d": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "text_e": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "accessory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::accessory.accessory",
+      "inversedBy": "info_accessories"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_keyboards",
+  "info": {
+    "singularName": "list-keyboard",
+    "pluralName": "list-keyboards",
+    "displayName": "list-keyboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model",
+      "required": true
+    },
+    "switchKeyboard": {
+      "displayName": "switch-keyboard",
+      "type": "component",
+      "repeatable": false,
+      "component": "switch-keyboard.switch-keyboard",
+      "pluginOptions": {}
+    },
+    "backlightingKeyboard": {
+      "displayName": "backlighting-keyboard",
+      "type": "component",
+      "repeatable": false,
+      "component": "backlighting-keyboard.backlighting-keyboard",
+      "pluginOptions": {}
+    },
+    "numberOfKeysKeyboard": {
+      "displayName": "number-of-keys-keyboard",
+      "type": "component",
+      "repeatable": false,
+      "component": "number-of-keys-keyboard.number-of-keys-keyboard",
+      "pluginOptions": {}
+    },
+    "keyGhost": {
+      "displayName": "key-ghost",
+      "type": "component",
+      "repeatable": false,
+      "component": "key-ghost.key-ghost",
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    }
+  }
+}

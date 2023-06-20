@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_key_ghost_key_ghosts",
+  "info": {
+    "displayName": "key-ghost"
+  },
+  "options": {},
+  "attributes": {
+    "n_key_press": {
+      "type": "string"
+    },
+    "multipress": {
+      "type": "string"
+    },
+    "b12_press": {
+      "type": "string"
+    },
+    "not_available": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_keybords",
+  "info": {
+    "singularName": "info-keybord",
+    "pluralName": "info-keybords",
+    "displayName": "info-keybord",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model",
+      "required": true
+    },
+    "connection_type": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "switch_type": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "optical_switches": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "response_time": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "polling_frequency": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "game_keys": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "response_time_8_LK_key": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "polling_frequency_of_8_LK_keys": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "antiGhost_technology": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "multimedia_hotkeys": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "backlighting": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "backlight_brightness": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "extras_included": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "moisture_protection": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "space": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "cable_length": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "interface": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "key_life": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "system_requirements": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "keybord": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::keybord.keybord",
+      "inversedBy": "info_keybords"
+    }
+  }
+}

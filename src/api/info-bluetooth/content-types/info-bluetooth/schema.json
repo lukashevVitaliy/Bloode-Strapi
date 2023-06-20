@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_bluetooths",
+  "info": {
+    "singularName": "info-bluetooth",
+    "pluralName": "info-bluetooths",
+    "displayName": "info-bluetooth",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "speaker_size": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "frequency_range": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphone_sensitivity": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "microphone_sensitivity": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "impedance": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "bluetooth_version": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "working_distance": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphone_battery_type": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "charging_case_battery_type": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "power": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphone_charging_time": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "charging_time_of_the_case": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "music_playback_time_withone_charge": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "playback_time_from_the_charger": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "weight": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "bluetooth": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bluetooth.bluetooth",
+      "inversedBy": "info_bluetooths"
+    }
+  }
+}

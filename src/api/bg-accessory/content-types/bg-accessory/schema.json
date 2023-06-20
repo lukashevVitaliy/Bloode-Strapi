@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bg_accessories",
+  "info": {
+    "singularName": "bg-accessory",
+    "pluralName": "bg-accessories",
+    "displayName": "bg-accessory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "bg_content_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bg_content_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bg_content_3": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "accessory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::accessory.accessory",
+      "inversedBy": "bg_accessories"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_menu_right_tabs",
+  "info": {
+    "displayName": "menuRightTabs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle_1": {
+      "type": "string"
+    },
+    "subtitle_2": {
+      "type": "string"
+    },
+    "subtitle_3": {
+      "type": "string"
+    }
+  }
+}

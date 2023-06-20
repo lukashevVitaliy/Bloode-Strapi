@@ -1,0 +1,136 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_headsets",
+  "info": {
+    "singularName": "info-headset",
+    "pluralName": "info-headsets",
+    "displayName": "info-headset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model",
+      "required": true
+    },
+    "connection_type": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "connection_type_a": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "connection_type_b": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "connection_type_c": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "connection_type_d": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "connection_type_e": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphones": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphones_a": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphones_b": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphones_c": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphones_d": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headphones_e": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "microphone": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "microphone_a": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "microphone_b": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "microphone_c": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "microphone_d": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "microphone_e": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "cable": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "cable_a": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "cable_b": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "cable_c": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "cable_d": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "cable_e": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "compatibility": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "weight": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "headset": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headset.headset",
+      "inversedBy": "info_headsets"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_press_center_block_infos",
+  "info": {
+    "displayName": "Press-center-block-info"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.press-centr-info"
+    }
+  }
+}

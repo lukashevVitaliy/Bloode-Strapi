@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accessories",
+  "info": {
+    "singularName": "accessory",
+    "pluralName": "accessories",
+    "displayName": "accessory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "accessories"
+    },
+    "bg_accessories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bg-accessory.bg-accessory",
+      "mappedBy": "accessory"
+    },
+    "accessory_colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accessory-color.accessory-color",
+      "mappedBy": "accessory"
+    },
+    "accessory_short_descs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accessory-short-desc.accessory-short-desc",
+      "mappedBy": "accessory"
+    },
+    "accessory_sizes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accessory-size.accessory-size",
+      "mappedBy": "accessory"
+    },
+    "description_accessories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::description-accessory.description-accessory",
+      "mappedBy": "accessory"
+    },
+    "info_accessories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::info-accessory.info-accessory",
+      "mappedBy": "accessory"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

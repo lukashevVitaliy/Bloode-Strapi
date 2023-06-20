@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_short_desc_short_descs",
+  "info": {
+    "displayName": "short-desc"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

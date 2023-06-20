@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_switch_keyboard_switch_keyboards",
+  "info": {
+    "displayName": "switch-keyboard"
+  },
+  "options": {},
+  "attributes": {
+    "optical": {
+      "type": "string"
+    },
+    "mechanical": {
+      "type": "string"
+    },
+    "mecha_like": {
+      "type": "string"
+    }
+  }
+}

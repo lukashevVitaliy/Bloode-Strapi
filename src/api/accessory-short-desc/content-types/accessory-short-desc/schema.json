@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accessory_short_descs",
+  "info": {
+    "singularName": "accessory-short-desc",
+    "pluralName": "accessory-short-descs",
+    "displayName": "accessory-short-desc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "accessoryShortDesc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "short-desc.short-desc",
+      "pluginOptions": {}
+    },
+    "accessory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::accessory.accessory",
+      "inversedBy": "accessory_short_descs"
+    }
+  }
+}

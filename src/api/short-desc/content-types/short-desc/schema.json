@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "short_descs",
+  "info": {
+    "singularName": "short-desc",
+    "pluralName": "short-descs",
+    "displayName": "short-desc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ShortDesc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "short-desc.short-desc",
+      "pluginOptions": {}
+    },
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "model"
+    },
+    "mouse": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::mouse.mouse",
+      "inversedBy": "short_descs"
+    }
+  }
+}

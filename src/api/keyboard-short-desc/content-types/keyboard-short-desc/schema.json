@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyboard_short_descs",
+  "info": {
+    "singularName": "keyboard-short-desc",
+    "pluralName": "keyboard-short-descs",
+    "displayName": "keyboard-short-desc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "ShortDescKeyboad": {
+      "type": "component",
+      "repeatable": true,
+      "component": "short-desc.short-desc",
+      "pluginOptions": {}
+    },
+    "keybord": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::keybord.keybord",
+      "inversedBy": "keyboard_short_descs"
+    }
+  }
+}

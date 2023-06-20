@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_headsets",
+  "info": {
+    "singularName": "list-headset",
+    "pluralName": "list-headsets",
+    "displayName": "list-headset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "dynamicsHeadset": {
+      "displayName": "dynamics",
+      "type": "component",
+      "repeatable": false,
+      "component": "dynamics.dynamics",
+      "pluginOptions": {}
+    },
+    "ConnectingHeadset": {
+      "displayName": "connecting-headset",
+      "type": "component",
+      "repeatable": false,
+      "component": "connecting-headset.connecting-headset",
+      "pluginOptions": {}
+    },
+    "headbandHeadset": {
+      "displayName": "headband-headset",
+      "type": "component",
+      "repeatable": false,
+      "component": "headband-headset.headband-headset",
+      "pluginOptions": {}
+    },
+    "backlightingHeadset": {
+      "displayName": "backlighting-headset",
+      "type": "component",
+      "repeatable": false,
+      "component": "backlighting-headset.backlighting-headset",
+      "pluginOptions": {}
+    }
+  }
+}

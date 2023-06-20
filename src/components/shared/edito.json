@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_editos",
+  "info": {
+    "displayName": "edito",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text_1": {
+      "type": "richtext"
+    },
+    "text_2": {
+      "type": "richtext"
+    },
+    "text_3": {
+      "type": "richtext"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

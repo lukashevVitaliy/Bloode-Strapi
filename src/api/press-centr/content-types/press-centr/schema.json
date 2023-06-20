@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "press_centrs",
+  "info": {
+    "singularName": "press-centr",
+    "pluralName": "press-centrs",
+    "displayName": "press-centr",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titlePages": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "slices": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.menu-right-tabs",
+        "shared.press-center-block-info"
+      ],
+      "pluginOptions": {}
+    }
+  }
+}

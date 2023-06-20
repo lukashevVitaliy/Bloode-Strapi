@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bluetooth_short_descs",
+  "info": {
+    "singularName": "bluetooth-short-desc",
+    "pluralName": "bluetooth-short-descs",
+    "displayName": "bluetooth-short-desc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model",
+      "required": true
+    },
+    "BluetoothShortDesc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "short-desc.short-desc",
+      "pluginOptions": {}
+    },
+    "bluetooth": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bluetooth.bluetooth",
+      "inversedBy": "bluetooth_short_descs"
+    }
+  }
+}

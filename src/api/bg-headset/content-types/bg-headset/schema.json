@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bg_headsets",
+  "info": {
+    "singularName": "bg-headset",
+    "pluralName": "bg-headsets",
+    "displayName": "bg-headset"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model",
+      "required": true
+    },
+    "bg_content_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bg_content_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bg_content_3": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "headset": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headset.headset",
+      "inversedBy": "bg_headsets"
+    }
+  }
+}

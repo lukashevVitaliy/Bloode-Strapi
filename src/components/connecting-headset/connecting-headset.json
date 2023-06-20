@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_connecting_headset_connecting_headsets",
+  "info": {
+    "displayName": "connecting-headset"
+  },
+  "options": {},
+  "attributes": {
+    "three_five_tenths_mm": {
+      "type": "string"
+    },
+    "usb": {
+      "type": "string"
+    },
+    "three_five_tenths_mm_usb": {
+      "type": "string"
+    },
+    "bt_aux": {
+      "type": "string"
+    },
+    "bt_two_and_four_tenths_Ghz_aux": {
+      "type": "string"
+    }
+  }
+}

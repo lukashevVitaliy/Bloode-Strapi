@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bg_keyboards",
+  "info": {
+    "singularName": "bg-keyboard",
+    "pluralName": "bg-keyboards",
+    "displayName": "bg-keyboard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "model",
+      "required": true
+    },
+    "bg_content_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bg_content_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bg_content_3": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "keybord": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::keybord.keybord",
+      "inversedBy": "bg_keyboards"
+    }
+  }
+}
