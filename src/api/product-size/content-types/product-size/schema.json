@@ -31,15 +31,6 @@
       ],
       "pluginOptions": {}
     },
-    "image2": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {}
-    },
     "text": {
       "type": "text",
       "required": true,

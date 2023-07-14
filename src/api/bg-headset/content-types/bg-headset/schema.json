@@ -4,7 +4,8 @@
   "info": {
     "singularName": "bg-headset",
     "pluralName": "bg-headsets",
-    "displayName": "bg-headset"
+    "displayName": "bg-headset",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,25 +22,28 @@
       "required": true
     },
     "bg_content_1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "bg_content_2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "bg_content_3": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "headset": {
       "type": "relation",

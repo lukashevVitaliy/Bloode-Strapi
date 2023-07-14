@@ -4,7 +4,8 @@
   "info": {
     "singularName": "bg-accessory",
     "pluralName": "bg-accessories",
-    "displayName": "bg-accessory"
+    "displayName": "bg-accessory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,25 +21,28 @@
       "targetField": "model"
     },
     "bg_content_1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "bg_content_2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "bg_content_3": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "accessory": {
       "type": "relation",

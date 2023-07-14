@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_product_drivers",
   "info": {
-    "displayName": "productDriver"
+    "displayName": "productDriver",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -15,11 +16,12 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
       "type": "richtext"
